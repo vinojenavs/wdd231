@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD213 couse home page for Ajenavi Onavino">
+    <meta name="author" content="Ajenavi Onavino">
+    <title>WDD213 Course home page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigtion.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <img src="images/home.svg" alt="site logo" width="512" height="512">
+        <span>Ajenavi Onavino</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>My name is Ajenavi Onavino. I am was born and raised in Nigeria. I am a member of the Church of Jesus
+                Christ
+                of latter-day saints. I am a singer and a songwriter with a strong passion for music. I also love to
+                write. I haev written two books and published one with the other soon to be published. I also have high
+                interest in Electrical engineering and software development, pursuing degrees in both. I am in my early
+                twenties and I hope to achieve so much more in my life.</p>
+        </section>
+        <section class="me">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="student photo" height="512" width="512">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <button id="all">All</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+            <p>Total Units of course listed below: <span id="totalUnits"></span></p>
+            <ul id="courseList"></ul>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/vinojenavs" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://ng.linkedin.com/in/onavino-ajenavi-896165310" target="_blank"><img src="images/linkedin.svg" alt="linkedIn" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.svg" alt="instagram" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-alt.svg" alt="twitter" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Ajenavi Onavino • Delta, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
