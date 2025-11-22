@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Delta Tech Solutions",
+    "logo": "images/delta-tech.jpg",
+    "phone": "+234-801-234-5678",
+    "address": "12 Okere Road, Warri, Delta State",
+    "website": "https://www.deltatech.com",
+    "membership": "Gold"
+  },
+  {
+    "name": "Warri Fresh Foods",
+    "logo": "images/warri-fresh.jpg",
+    "phone": "+234-802-345-6789",
+    "address": "45 Market Street, Warri, Delta State",
+    "website": "https://www.warrifreshfoods.com",
+    "membership": "Silver"
+  },
+  {
+    "name": "Urhobo Finance Ltd",
+    "logo": "images/urhobo-finance.jpg",
+    "phone": "+234-803-456-7890",
+    "address": "88 Bank Road, Warri, Delta State",
+    "website": "https://www.urhobofinance.com",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Niger Delta Energy",
+    "logo": "images/niger-energy.jpg",
+    "phone": "+234-804-567-8901",
+    "address": "101 Oilfield Avenue, Warri, Delta State",
+    "website": "https://www.ndenergy.com",
+    "membership": "Gold"
+  },
+  {
+    "name": "Community Builders NGO",
+    "logo": "images/community-builders.png",
+    "phone": "+234-805-678-9012",
+    "address": "22 Unity Street, Warri, Delta State",
+    "website": "https://www.communitybuilders.org",
+    "membership": "Silver"
+  }
+]

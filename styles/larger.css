@@ -5,19 +5,19 @@
     }
 
     header {
-        grid-template-columns: 24px auto;
+        grid-template-columns: 24px 1fr auto;
     }
 
     .hamburger {
         display: none;
     }
 
-    .navigation {
-        display: block;
+    header.navigation {
+        display: flex;
         border-bottom: solid 1px var(--dun);
     }
 
-    .navigation ul {
+    header .navigation {
         display: flex;
     }
 
