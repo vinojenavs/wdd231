@@ -28,9 +28,8 @@ header {
     display: grid;
     grid-template-columns: 40px auto 30px;
     padding: 5px 10px 5px 10px;
-    border-bottom: solid 1px var();
-    column-gap: 8px;
-    align-items: end;
+    border-bottom: solid 1px var(--dry-sage);
+    align-items: center;
     background-color: var(--dust-grey);
 }
 
@@ -41,7 +40,7 @@ header img {
     padding-bottom: 2.5px;
 }
 
-header h1 {
+header h2 {
     font-size: 1.2rem;
     color: var(--ivory);
 }
@@ -110,7 +109,7 @@ header h1 {
     top: 20%;
     left: 10px;
     color: var(--ivory);
-    text-shadow: 2px 2px 4px var(--dust-grey);
+    text-shadow: 4px 4px 4px var(--dust-grey);
 }
 
 .hero h4 {
@@ -118,7 +117,7 @@ header h1 {
     top: 40%;
     left: 10px;
     color: var(--ivory);
-    text-shadow: 2px 2px 4px var(--dust-grey);
+    text-shadow: 4px 4px 4px var(--dust-grey);
 }
 
 .hero p {
@@ -126,7 +125,7 @@ header h1 {
     top: 32%;
     left: 10px;
     color: var(--ivory);
-    text-shadow: 2px 2px 4px var(--dust-grey);
+    text-shadow: 4px 4px 4px var(--dust-grey);
 }
 
 .hero .cta-button {
@@ -158,7 +157,7 @@ h1, h2 {
 
 /********** WEATHER ***********/
 
-.weather {
+.weather, .weather1 {
     text-align: center;
     background-color: var(--dry-sage);
     margin: 10px;
@@ -167,7 +166,7 @@ h1, h2 {
     max-width: 100%;
 }
 
-.weather h2, .events h2 {
+.weather h2, .weather1 h2, .events h2 {
     background-color: var(--jet-black);
     color: var(--ivory);
     border-top-left-radius: 10px;

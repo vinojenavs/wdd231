@@ -1,8 +1,5 @@
 // SELECT HTML ELEMENTS IN THE DOCUMENT 
-const myTown = document.querySelector('#city');
-const myDescription = document.querySelector('#description');
-const myTemperature = document.querySelector('#temperature');
-const myGraphic = document.querySelector('#graphic');
+const weather = document.querySelector('.weather');
 
 // CREATE REQUIRED VARIABLES FOR THE URL
 const myKey = "3fda8d4d8c1cdd165ec0a7fe31fc21e0"
@@ -29,14 +26,19 @@ async function fetchCurentWeather() {
 }
 
 // DISPLAY THE JSON DATA 
+
 function displayCurrentWeather(data) {
     console.log('hello')
-    myTown.innerHTML = data.name
-    myDescription.innerHTML = data.weather[0].description
-    myTemperature.innerHTML = `${data.main.temp}&deg;C`
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
-    myGraphic.setAttribute('SRC', iconsrc)
-    myGraphic.setAttribute('alt', data.weather[0].description)
+    weather.innerHTML = `
+            <h2>Current Weather</h2>
+            <div class="current">
+                <h3 id="town1">${data.name}</h3>
+                <img id="graphic1" src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="${data.weather[0].description}">
+                <p id="description1">${data.weather[0].description}</p>
+                <p id="temperature1">${data.main.temp}&deg;C</p>
+            </div>`
+
 }
+
 
 fetchCurentWeather();
