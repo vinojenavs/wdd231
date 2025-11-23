@@ -6,6 +6,10 @@
         align-items: center;
     }
 
+    .hero img {
+        height: 270px;
+    }
+
     header h1 {
         grid-column: 2/3;
     }
@@ -14,7 +18,7 @@
         display: none;
     }
 
-    .navigation {
+    .navigation, .navigation.show {
         grid-column: 3/4;
         display: flex;
     }
