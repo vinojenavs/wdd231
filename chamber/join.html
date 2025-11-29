@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ajenavi Onavino">
+    <meta name="description"
+        content="Connecting businesses and building community in Warri, Delta State. Discover events, resources, and opportunities for growth.">
+    <meta property="og:title" content="Warri Chamber of commerce">
+    <meta property="og:description"
+        content="Connecting businesses and building community in Warri, Delta State. Discover events, resources, and opportunities for growth.">
+    <meta property="og:image" content="https://vinojenavs.github.io/wdd231/chamber/images/warri-airport.jpg">
+    <meta property="og:url" content="https://vinojenavs.github.io/wdd231/chamber/index.html">
+    <title>Warri Chamber of Commerce</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/larger-chamber.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigtion.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/userlogo.svg" alt="chamberlogo">
+        <h2>Warri Chamber of Commerce</h2>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <div class="current"><a href="join.html">Join</a></div>
+            <a href="#">Discovery</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Membership Form -->
+        <form method="get" action="thankyou.html">
+            <label title="Applicant First Name">
+                First Name:
+                <input type="text" name="firstName" autocomplete="given-name" title="First Name" required>
+            </label>
+
+            <label title="Applicant Last Name">
+                Last Name:
+                <input type="text" name="lastname" autocomplete="family-name" title="Last Name" required>
+            </label>
+
+            <label title="Organisation Title">
+                Organisation Title:
+                <input type="text" name="orgTitle" autocomplete="organization-title" title="Organisation Title"
+                    pattern="[A-Za-z\\-\\s]{7,}">
+            </label>
+
+            <label title="Email Address">
+                Email:
+                <input type="text" name="email" autocomplete="email" title="Email Address"
+                    placeholder="example@domain.com" required>
+            </label>
+
+            <label title="Mobile Phone">
+                Mobile:
+                <input type="tel" name="mobile" autocomplete="tel" title="Mobile Phone" required>
+            </label>
+
+            <label title="Organization Name">
+                Organization:
+                <input type="text" name="organization" autocomplete="organization" title="Organization Name" required>
+            </label>
+
+            <label title="Membership Level">
+                Membership Level:
+                <select name="membership" title="Membership Level" required>
+                    <option value="np">NP Membership (Non-Profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label title="Organisation Description">
+                Description:
+                <textarea name="description" title="Organisation Description" rows="4"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Apply For Membership">
+        </form>
+
+        <!-- Membership Cards -->
+        <div class="cards">
+            <h2>Membership Levels</h2>
+            <div class="card">
+                <h3>NP Membership</h3>
+                <a href="#npModal">More Info</a>
+            </div>
+            <div class="card">
+                <h3>Bronze Membership</h3>
+                <a href="#bronzeModal">More Info</a>
+            </div>
+            <div class="card">
+                <h3>Silver Membership</h3>
+                <a href="#silverModal">More Info</a>
+            </div>
+            <div class="card">
+                <h3>Gold Membership</h3>
+                <a href="#goldModal">More Info</a>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <h2>NP Membership Benefits</h2>
+                <p>No fee, access to community events, basic training.</p>
+                <button onclick="closeModal('npModal')">Close</button>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <h2>Bronze Membership Benefits</h2>
+                <p>Discounted events, spotlight advertising, entry-level training.</p>
+                <button onclick="closeModal('bronzeModal')">Close</button>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <h2>Silver Membership Benefits</h2>
+                <p>More discounts, advanced training, featured advertising slots.</p>
+                <button onclick="closeModal('silverModal')">Close</button>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <h2>Gold Membership Benefits</h2>
+                <p>Exclusive events, premium training, top advertising positions.</p>
+                <button onclick="closeModal('goldModal')">Close</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <h4>Warri Chamber of Commerce</h4>
+            <p>No 7 Bright Hope Off Airport Road</p>
+            <p>Warri, PMB 1014</p>
+            <p>info@warricoc.org</p>
+            <p>(+234) 913 905 3351</p>
+        </section>
+        <section>
+            <nav>
+                <a href="https://ng.linkedin.com/in/onavino-ajenavi-896165310" target="_blank"><img
+                        src="images/linkedin.svg" alt="linkedIn" width="16" height="16"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="images/insta.svg" alt="instagram"
+                        width="16" height="16"></a>
+                <a href="https://x.com/" target="_blank"><img src="images/twitter-alt.svg" alt="twitter" width="16"
+                        height="16"></a>
+            </nav>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Ajenavi Onavino</p>
+            <p>&copy; <span id="currentyear"></span> Warri Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+
+</html>

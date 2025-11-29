@@ -18,7 +18,8 @@
         display: none;
     }
 
-    .navigation, .navigation.show {
+    .navigation,
+    .navigation.show {
         grid-column: 3/4;
         display: flex;
     }
@@ -36,11 +37,15 @@
         grid-column: 1/3;
     }
 
-    .events h2, .weather h2, .weather1 h2 {
+    .events h2,
+    .weather h2,
+    .weather1 h2 {
         margin: 0;
     }
 
-    .hero, h1, .spotlights {
+    .hero,
+    h1,
+    .spotlights {
         grid-column: 1/5;
     }
 
@@ -52,4 +57,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    form {
+        grid-column: 1/3;
+    }
+
+    .cards {
+        grid-column: 3/5;
+    }
+
 }

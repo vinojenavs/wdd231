@@ -12,13 +12,9 @@
         display: none;
     }
 
-    header.navigation {
-        display: flex;
+    .navigation {
+        display: block;
         border-bottom: solid 1px var(--dun);
-    }
-
-    header .navigation {
-        display: flex;
     }
 
     .navigation a {
