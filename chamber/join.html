@@ -12,7 +12,7 @@
         content="Connecting businesses and building community in Warri, Delta State. Discover events, resources, and opportunities for growth.">
     <meta property="og:image" content="https://vinojenavs.github.io/wdd231/chamber/images/warri-airport.jpg">
     <meta property="og:url" content="https://vinojenavs.github.io/wdd231/chamber/index.html">
-    <title>Warri Chamber of Commerce</title>
+    <title>Join Warri Chamber of Commerce</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/larger-chamber.css">
@@ -38,6 +38,7 @@
         </nav>
     </header>
     <main>
+        <h1>Join Warri Chamber of Commerce</h1>
         <!-- Membership Form -->
         <form method="get" action="thankyou.html">
             <label title="Applicant First Name">
@@ -58,7 +59,7 @@
 
             <label title="Email Address">
                 Email:
-                <input type="text" name="email" autocomplete="email" title="Email Address"
+                <input type="email" name="email" autocomplete="email" title="Email Address"
                     placeholder="example@domain.com" required>
             </label>
 
@@ -75,6 +76,7 @@
             <label title="Membership Level">
                 Membership Level:
                 <select name="membership" title="Membership Level" required>
+                    <option value="" disabled selected>Select a membership level</option>
                     <option value="np">NP Membership (Non-Profit)</option>
                     <option value="bronze">Bronze Membership</option>
                     <option value="silver">Silver Membership</option>
@@ -118,7 +120,7 @@
             <div class="modal-content">
                 <h2>NP Membership Benefits</h2>
                 <p>No fee, access to community events, basic training.</p>
-                <button onclick="closeModal('npModal')">Close</button>
+                <button class="close-btn">Close</button>
             </div>
         </div>
 
@@ -126,7 +128,7 @@
             <div class="modal-content">
                 <h2>Bronze Membership Benefits</h2>
                 <p>Discounted events, spotlight advertising, entry-level training.</p>
-                <button onclick="closeModal('bronzeModal')">Close</button>
+                <button class="close-btn">Close</button>
             </div>
         </div>
 
@@ -134,7 +136,7 @@
             <div class="modal-content">
                 <h2>Silver Membership Benefits</h2>
                 <p>More discounts, advanced training, featured advertising slots.</p>
-                <button onclick="closeModal('silverModal')">Close</button>
+                <button class="close-btn">Close</button>
             </div>
         </div>
 
@@ -142,7 +144,7 @@
             <div class="modal-content">
                 <h2>Gold Membership Benefits</h2>
                 <p>Exclusive events, premium training, top advertising positions.</p>
-                <button onclick="closeModal('goldModal')">Close</button>
+                <button class="close-btn">Close</button>
             </div>
         </div>
     </main>

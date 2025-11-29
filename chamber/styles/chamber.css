@@ -87,6 +87,7 @@ header h2 {
 
 .navigation .current {
     background-color: var(--jet);
+    color: white;
 }
 
 .navigation a:hover {
@@ -296,7 +297,7 @@ select {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background-color: rgba(29, 51, 84, 0.45);
 }
 
 .modal-content {

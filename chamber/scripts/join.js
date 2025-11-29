@@ -1,12 +1,8 @@
-// Wait until DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
-  // Select all "More Info" links inside cards
-  const links = document.querySelectorAll(".card a");
-
-  // Attach click event to each link
-  links.forEach(link => {
+  // Open modal when clicking "More Info"
+  document.querySelectorAll(".card a").forEach(link => {
     link.addEventListener("click", event => {
-      event.preventDefault(); // prevent jump to #id
+      event.preventDefault();
       const modalId = link.getAttribute("href").substring(1); // remove #
       const modal = document.getElementById(modalId);
       if (modal) {
@@ -15,12 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Close buttons inside modals
-  const closeButtons = document.querySelectorAll(".modal button");
-  closeButtons.forEach(button => {
+  // Close modal when clicking any close button
+  document.querySelectorAll(".modal .close-btn").forEach(button => {
     button.addEventListener("click", () => {
       const modal = button.closest(".modal");
-      modal.style.display = "none";
+      if (modal) {
+        modal.style.display = "none";
+      }
     });
   });
 
@@ -31,11 +28,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-// Optional: function for inline onclick="closeModal('id')"
-function closeModal(id) {
-  const modal = document.getElementById(id);
-  if (modal) {
-    modal.style.display = "none";
-  }
-}
