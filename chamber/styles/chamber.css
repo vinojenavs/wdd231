@@ -301,7 +301,7 @@ select {
 }
 
 .modal-content {
-    background: #fff;
+    background-color: #fff;
     margin: 10% auto;
     padding: 20px;
     width: 80%;
