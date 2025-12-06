@@ -21,9 +21,7 @@
         rel="stylesheet">
     <script src="scripts/navigtion.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
+    <script type="module" src="scripts/place.js" defer></script>
 </head>
 
 <body>
@@ -32,43 +30,17 @@
         <h2>Warri Chamber of Commerce</h2>
         <button id="ham-btn" class="hamburger"></button>
         <nav id="nav-bar" class="navigation">
-            <div class="current"><a href="index.html">Home</a></div>
+            <a href="index.html">Home</a>
             <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
-            <a href="discover.html">Discovery</a>
+            <div class="current"><a href="discover.html">Discovery</a></div>  
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/warri-airport.jpg" alt="warri chamber of commerce">
-            <h3>Business is a matter of Human Service</h3>
-            <h4>Milton S Hershey</h4>
-            <p>"A reminder that commerce thrives when it serves people first"</p>
-            <a href="#" class="cta-button">Join the Chamber</a>
+        <div id="discover">
+            <section id="visitor-message"></section>
+            <section class="pcards"></section>
         </div>
-        <!--- Call to action -->
-        <h1>Home</h1>
-        <!--- Current Event Section -->
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <ul>
-              <li><strong>Nov 30:</strong> Business Networking Night</li>
-              <li><strong>Dec 10:</strong> Holiday Market & Expo</li>
-              <li><strong>Jan 5:</strong> New Year Business Forum</li>
-            </ul>
-        </section>
-        <!--- Weather Section -->
-        <div class="weather">
-        </div>
-        <div class="weather1">
-        </div> 
-        <!--- Company Spotlight -->
-        <section class="spotlights">
-          <h2>Member Spotlights</h2>
-          <div id="spotlight-container">
-            <!-- Spotlight cards will be injected here by JavaScript -->
-          </div>
-        </section>
     </main>
     <footer>
         <section>

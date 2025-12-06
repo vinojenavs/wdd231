@@ -1,0 +1,91 @@
+@media only screen and (min-width: 641px) {
+
+    header {
+        display: grid;
+        grid-template-columns: 40px 1fr auto;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    .hero img {
+        height: 270px;
+    }
+
+    header h1 {
+        grid-column: 2/3;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation,
+    .navigation.show {
+        grid-column: 3/4;
+        display: flex;
+    }
+
+    .navigation a {
+        border-bottom: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .events {
+        grid-column: 1/3;
+    }
+
+    .events h2,
+    .weather h2,
+    .weather1 h2 {
+        margin: 0;
+    }
+
+    .hero,
+    h1,
+    .spotlights {
+        grid-column: 1/5;
+    }
+
+    #spotlight-container {
+        display: flex;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    form {
+        grid-column: 1/3;
+    }
+
+    .cards {
+        grid-column: 3/5;
+    }
+
+    #discover {
+        grid-column: 1/5;
+    }
+
+    .pcard {
+        grid-template-areas:
+            "photo name"
+            "photo desc"
+            "photo locat"
+            "photo button";
+    }
+
+    .pcard img:hover {
+        transform: scale(1.1);
+    }
+
+    .pcard img {
+        width: 300px;
+        transition: transform 0.3s ease;
+    }
+
+}
