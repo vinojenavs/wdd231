@@ -1,0 +1,15 @@
+Website requirements
+1. Page audit reports no errors
+2. Lightnouse Test 95+
+3. Color Contrast reports no errors
+4. No horizontal scrolling ✅
+5. Hamburger Menu ✅
+6. Default CSS not needed ✅
+7. Form action needed ✅
+8. 15 dynamic generated items each with at least 4 distinct item properties
+9. Local Storage is used to store user states/values
+10. Modal dialog used
+11. DOM manipulation
+12. Array method 
+13. Template literals
+

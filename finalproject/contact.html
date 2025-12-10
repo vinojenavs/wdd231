@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta State Fresh Produce</title>
+    <link rel="stylesheet" href="styles/delta.css">
+    <link rel="stylesheet" href="styles/larger-delta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/tractor.svg" alt="DSFP logo" width="50px">
+        <h1>Delta Fresh Produce</h1>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="produce.html">Seasonal produce</a>
+            <a href="about.html">About</a>
+            <div class="current"><a href="contact.html">Contact Us</a></div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <form action="thankyou.html" method="get">
+            <label title="First Name">First Name:
+                <input type="text" name="firstname" autocomplete="given-name" title="First Name" required>
+            </label>
+            <label title="Last Name">Last Name:
+                <input type="text" name="lastname" autocomplete="family-name" title="Last Name" required>
+            </label>
+            <label title="Email">Email:
+                <input type="text" placeholder="example@domain.com" name="email" autocomplete="email" title="Email" required>
+            </label>
+            <label title="Interest">Product of Interest:
+                <select name="interest" id="interest" title="Interest">
+                    <option value="" disabled selected>Select a produce</option>
+                    <option value="tom">Tomatoes</option>
+                    <option value="gar">Garri</option>
+                    <option value="pep">Pepper</option>
+                    <option value="oni">Onion</option>
+                    <option value="ric">Rice</option>
+                    <option value="bea">Beans</option>
+                    <option value="yam">Yam</option>
+                </select>
+            </label>
+            <label title="Description">Description
+                <textarea name="description" id="description" rows="5" title="Description"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Form">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p>Delta Fresh Produce</p>
+            <p>No 7 Ogboru street, Okere road Warri, Delta State</p>
+            <p>Warri PMB 1014</p>
+            <p>@infowarridsfp.org</p>
+            <p>(+234) 913 905 3351</p>
+        </div>
+        <div class="socials">
+            <nav>
+                <a href="#"><img src="images/linkedin.svg" alt="linkedInpage" width="40px"></a>
+                <a href="#"><img src="images/twitter-alt.svg" alt="twitterpage" width="40px"></a>
+                <a href="#"><img src="images/insta.svg" alt="instagrampage" width="40px"></a>
+            </nav>
+        </div>
+        <div>
+            <p>WDD231 Final Project</p>
+            <p>Ajenavi Onavino</p>
+            <p>&copy; <span id="currentyear"></span> Delta State Fresh Produce</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

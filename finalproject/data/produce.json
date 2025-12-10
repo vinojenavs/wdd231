@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Tomatoes",
+        "season": "Dry",
+        "pricePerKg": 800,
+        "farm": "Ogun Valley",
+        "availability": "High",
+        "image": "../images/tomatoes.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Spinach",
+        "season": "Wet",
+        "pricePerKg": 500,
+        "farm": "Ibadan Greens",
+        "availability": "Medium",
+        "image": "../images/spinach.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Plantain",
+        "season": "Wet",
+        "pricePerKg": 700,
+        "farm": "Oyo Farms",
+        "availability": "High",
+        "image": "../images/plantain.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Yam",
+        "season": "Dry",
+        "pricePerKg": 900,
+        "farm": "Benue Roots",
+        "availability": "Medium",
+        "image": "../images/yam.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Pepper",
+        "season": "Dry",
+        "pricePerKg": 600,
+        "farm": "Kaduna Spice",
+        "availability": "Low",
+        "image": "../images/pepper.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Cassava",
+        "season": "Dry",
+        "pricePerKg": 300,
+        "farm": "Edo Starch",
+        "availability": "High",
+        "image": "../images/cassava.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Okra",
+        "season": "Wet",
+        "pricePerKg": 650,
+        "farm": "Lagos Urban",
+        "availability": "Medium",
+        "image": "../images/okra.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Corn",
+        "season": "Wet",
+        "pricePerKg": 550,
+        "farm": "Kwara Fields",
+        "availability": "High",
+        "image": "../images/corn.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Ugu",
+        "season": "Wet",
+        "pricePerKg": 500,
+        "farm": "Ondo Greens",
+        "availability": "High",
+        "image": "../images/ugu.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Onion",
+        "season": "Dry",
+        "pricePerKg": 700,
+        "farm": "Sokoto Bulbs",
+        "availability": "High",
+        "image": "../images/onion.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Pineapple",
+        "season": "Wet",
+        "pricePerKg": 1000,
+        "farm": "Ogun Tropics",
+        "availability": "Medium",
+        "image": "../images/pineapple.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Banana",
+        "season": "Wet",
+        "pricePerKg": 800,
+        "farm": "Oyo Farms",
+        "availability": "High",
+        "image": "../images/banana.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Sweet Potato",
+        "season": "Dry",
+        "pricePerKg": 600,
+        "farm": "Plateau Roots",
+        "availability": "Medium",
+        "image": "../images/sweet-potato.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Watermelon",
+        "season": "Dry",
+        "pricePerKg": 1200,
+        "farm": "Kano Melons",
+        "availability": "Low",
+        "image": "../images/watermelon.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Cucumber",
+        "season": "Wet",
+        "pricePerKg": 700,
+        "farm": "Lagos Urban",
+        "availability": "High",
+        "image": "../images/cucumber.jpg"
+    }
+]
