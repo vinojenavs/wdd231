@@ -6,9 +6,9 @@ Website requirements
 5. Hamburger Menu ✅
 6. Default CSS not needed ✅
 7. Form action needed ✅
-8. 15 dynamic generated items each with at least 4 distinct item properties
+8. 15 dynamic generated items each with at least 4 distinct item properties ✅
 9. Local Storage is used to store user states/values
-10. Modal dialog used
+10. Modal dialog used ✅
 11. DOM manipulation
 12. Array method 
 13. Template literals

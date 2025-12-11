@@ -128,7 +128,7 @@ header nav {
     padding: 10px;
 }
 
-.btn, .produce-card button, #close {
+.btn, .produce-card button, #close, .sign-up {
     text-decoration: none;
     background-color: var(--reddish-brown);
     padding: 10px;
