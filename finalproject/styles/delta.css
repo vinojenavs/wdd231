@@ -128,7 +128,7 @@ header nav {
     padding: 10px;
 }
 
-.btn {
+.btn, .produce-card button, #close {
     text-decoration: none;
     background-color: var(--reddish-brown);
     padding: 10px;
@@ -180,6 +180,25 @@ input[type="submit"] {
 
 
 /********** MODAL **********/
+
+#produce-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.produce-card {
+    margin: 10px;
+    padding: 10px;
+    color: var(--hunter-green);
+}
+
+.produce-card img {
+    width: 100%;
+}
+
+
+
+
 .modal {
     display: none;
     position: fixed;
@@ -194,6 +213,7 @@ input[type="submit"] {
 
 .modal-content {
     background-color: #fff;
+    color: var(--hunter-green);
     margin: 10% auto;
     padding: 20px;
     border-radius: 8px;
@@ -219,6 +239,10 @@ input[type="submit"] {
 }
 
 
+
+.about {
+    padding: 10px 10px;
+}
 
 
 /********** FOOTER **********/

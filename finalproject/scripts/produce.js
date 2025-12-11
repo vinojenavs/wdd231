@@ -7,7 +7,7 @@ async function laodProduceList() {
     const produceList = document.getElementById("produce-list");
     produceList.innerHTML = produce.map(m => `
         <div class="produce-card">
-          <img src="${m.image}" alt="${m.name} from ${m.farm}">
+          <img src="${m.image}" alt="${m.name} from ${m.farm}" loading="lazy">
           <div class="card-content">
             <h3>${m.name}</h3>
             <p><span class="badge">${m.season} season</span></p>
